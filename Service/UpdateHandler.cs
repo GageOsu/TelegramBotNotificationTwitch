@@ -11,6 +11,9 @@ using TelegramBotNotificationTwitch.Model;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace TelegramBotNotificationTwitch.Service;
+
+// TODO Разбить update handler 
+// TODO Сделать единный inlineMarkup
 public class UpdateHandler(
     ITelegramBotClient bot,
     ILogger<UpdateHandler> logger,
